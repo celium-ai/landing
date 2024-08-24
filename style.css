@@ -9,30 +9,39 @@ body, html {
 .flex-container {
     display: flex;
     flex-direction: row; /* Align items horizontally */
-    justify-content: space-around; /* Distribute items with space between them */
-    align-items: center; /* Align items vertically in the center */
-    flex-wrap: wrap; /* Wrap items if the screen is too small */
-    margin-top: 2rem;
+    justify-content: space-around; /* Evenly space items with space around them */
+    align-items: center; /* Vertically center items */
+    margin-top: 2rem; /* Add some margin above the container */
 }
 
 .flex-item {
-    flex-basis: 30%; /* Make sure each item takes up about 30% of the container width */
-    max-width: 300px; /* Optional: Limit the maximum width of each item */
-    text-align: center; /* Center align text inside each item */
+    flex-basis: 30%; /* Each item takes up about 30% of the container's width */
+    max-width: 300px; /* Optional: Set a maximum width for each item */
+    text-align: center; /* Center text inside each item */
+    padding: 1rem; /* Add padding inside each flex item */
 }
 
 .icon {
-    font-size: 5rem; /* Adjust icon size as needed */
-    color: #3a5a40;
-    margin-bottom: 1rem;
+    font-size: 3rem; /* Adjust icon size */
+    color: #3a5a40; /* Icon color */
+    margin-bottom: 1rem; /* Space below the icon */
 }
 
 .flex-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 1.25rem; /* Title size */
+    font-weight: bold; /* Make title bold */
+    margin-bottom: 1rem; /* Space below the title */
 }
 
+.section-dark {
+    background-color: #dad7cd; /* Background color for the section */
+    padding: 3rem 0; /* Padding top and bottom */
+}
+
+.section-heading {
+    font-size: 2rem; /* Section heading size */
+    margin-bottom: 2rem; /* Space below the heading */
+}
 
 .bg-light-green {
     background-color: #f0f4f0;
