@@ -12,6 +12,7 @@ body, html {
     justify-content: space-around; /* Evenly space items with space around them */
     align-items: center; /* Vertically center items */
     margin-top: 2rem; /* Add some margin above the container */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .flex-item {
@@ -19,6 +20,7 @@ body, html {
     max-width: 300px; /* Optional: Set a maximum width for each item */
     text-align: center; /* Center text inside each item */
     padding: 1rem; /* Add padding inside each flex item */
+    margin-bottom: 2rem; /* Space below items for wrapping */
 }
 
 .icon {
@@ -126,27 +128,10 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.icon {
-    font-size: 4rem;
-    color: #3a5a40;
-    margin-bottom: 1rem;
-}
-
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.flex-item {
-    margin-bottom: 2rem;
-    text-align: center;
 }
 
 .cta-section {
