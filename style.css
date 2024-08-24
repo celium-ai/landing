@@ -6,57 +6,32 @@ body, html {
     color: #2d3c2d;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row; /* Align items horizontally */
-    justify-content: space-around; /* Evenly space items with space around them */
-    align-items: center; /* Vertically center items */
-    margin-top: 2rem; /* Add some margin above the container */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+.header {
+    background-color: #3a5a40; /* Dark green */
+    color: white;
+    padding: 16px 0;
 }
 
-.flex-item {
-    flex-basis: 30%; /* Each item takes up about 30% of the container's width */
-    max-width: 300px; /* Optional: Set a maximum width for each item */
-    text-align: center; /* Center text inside each item */
-    padding: 1rem; /* Add padding inside each flex item */
-    margin-bottom: 2rem; /* Space below items for wrapping */
-}
-
-.icon {
-    font-size: 3rem; /* Adjust icon size */
-    color: #3a5a40; /* Icon color */
-    margin-bottom: 1rem; /* Space below the icon */
-}
-
-.flex-title {
-    font-size: 1.25rem; /* Title size */
-    font-weight: bold; /* Make title bold */
-    margin-bottom: 1rem; /* Space below the title */
+.section-light {
+    background-color: #dad7cd; /* Light gray-green */
+    padding: 3rem 0;
 }
 
 .section-dark {
-    background-color: #dad7cd; /* Background color for the section */
-    padding: 3rem 0; /* Padding top and bottom */
+    background-color: #f0f4f0; /* Light green */
+    padding: 3rem 0;
 }
 
-.section-heading {
-    font-size: 2rem; /* Section heading size */
-    margin-bottom: 2rem; /* Space below the heading */
-}
-
-.bg-light-green {
-    background-color: #f0f4f0;
-}
-
-.text-dark-green {
-    color: #2d3c2d;
-}
-
-.header {
-    background-color: #3a5a40;
+.cta-section {
+    background-color: #3a5a40; /* Dark green */
     color: white;
-    padding: 16px 0;
+    padding: 3rem 0;
+}
+
+.footer {
+    background-color: #2d3c2d; /* Darker green */
+    color: white;
+    padding: 2rem 0;
 }
 
 .container {
@@ -105,16 +80,6 @@ body, html {
     height: auto;
 }
 
-.section-light {
-    background-color: #dad7cd;
-    padding: 16px 0;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -128,27 +93,33 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.icon {
+    font-size: 4rem;
+    color: #3a5a40;
+    margin-bottom: 1rem;
+}
+
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.cta-section {
-    background-color: #3a5a40;
-    color: white;
-    padding: 16px 0;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.cta-subtext {
-    font-size: 1.25rem;
+.flex-item {
+    flex-basis: 30%;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
     margin-bottom: 2rem;
-}
-
-.footer {
-    background-color: #2d3c2d;
-    color: white;
-    padding: 16px 0;
 }
 
 .footer-links a {
