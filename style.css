@@ -59,6 +59,21 @@ nav a.active {
 nav a:hover {
     color: #588157; /* Hover color */
 }
+/* Resize the logo to icon size */
+.logo-icon {
+    height: 40px; /* Set the height to 40px, adjust as needed */
+    width: auto; /* Auto width to maintain aspect ratio */
+}
+
+/* Ensure the nav bar items are aligned */
+nav ul {
+    display: flex;
+    align-items: center; /* Align the list items and the logo vertically */
+}
+
+nav img {
+    margin-right: 20px; /* Space between the logo and navigation items */
+}
 
 .text-center {
     text-align: center;
