@@ -51,6 +51,10 @@ nav a {
     color: inherit; /* Inherits the text color */
     transition: color 0.3s; /* Smooth color change on hover */
 }
+nav a.active {
+    color: #588157; /* Or another highlight color */
+    font-weight: bold;
+}
 
 nav a:hover {
     color: #588157; /* Hover color */
