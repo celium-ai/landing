@@ -40,6 +40,22 @@ body, html {
     padding: 0 16px;
 }
 
+nav ul {
+    list-style: none; /* Removes the default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; /* Inherits the text color */
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+nav a:hover {
+    color: #588157; /* Hover color */
+}
+
 .text-center {
     text-align: center;
 }
