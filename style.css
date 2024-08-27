@@ -1,3 +1,4 @@
+/* Global Styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,10 +7,16 @@ body, html {
     color: #2d3c2d;
 }
 
+/* Header */
 .header {
     background-color: #3a5a40; /* Dark green */
     color: white;
     padding: 16px 0;
+}
+
+/* Section Styles */
+.section-light, .section-dark {
+    color: #2d3c2d; /* Dark green color for readability */
 }
 
 .section-light {
@@ -28,22 +35,29 @@ body, html {
     padding: 3rem 0;
 }
 
-.footer {
-    background-color: #2d3c2d; /* Darker green */
-    color: white;
-    padding: 2rem 0;
-}
-
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
+/* Navigation Bar */
+nav {
+    display: flex; /* Ensure the nav itself is a flex container */
+    align-items: center; /* Center the logo and links vertically */
+    justify-content: space-between; /* Space out the logo and the nav links */
+    background-color: #e0f7de; /* Background color for the nav */
+    padding: 0.5rem 1rem; /* Add some padding around the nav */
+}
+
 nav ul {
-    list-style: none; /* Removes the default list bullets */
-    padding: 0;
+    display: flex; /* Display the links in a row */
+    align-items: center; /* Vertically center the links */
+    list-style: none; /* Remove bullet points */
     margin: 0;
+    padding: 0;
+    gap: 20px; /* Add some space between the links */
 }
 
 nav a {
@@ -62,33 +76,19 @@ nav a:hover {
     color: #588157; /* Hover color */
 }
 
-/* Resize the logo to icon size */
+/* Logo Icon */
 .logo-icon {
-    height: 40px; /* Set the height to 40px, adjust as needed */
-    width: auto; /* Auto width to maintain aspect ratio */
-    margin-right: 20px; /* Space between the logo and navigation items */
+    height: 40px; /* Adjust the size of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and the nav links */
 }
 
-nav img {
-    margin-right: 20px; /* Space between the logo and navigation items */
-}
-nav a:hover {
-    color: #588157; /* Hover color */
-}
-
-nav ul {
-    list-style: none; /* Removes the default list bullets */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Arrange items horizontally */
-    align-items: center; /* Vertically align items */
-    gap: 20px; /* Space between each nav item */
-}
-
+/* Text Centering */
 .text-center {
     text-align: center;
 }
 
+/* Headings */
 .main-heading {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -99,6 +99,7 @@ nav ul {
     margin-bottom: 2rem;
 }
 
+/* Call to Action Button */
 .cta-button {
     background-color: #a3b18a;
     color: white;
@@ -113,6 +114,7 @@ nav ul {
     background-color: #588157;
 }
 
+/* Image Container */
 .image-container {
     margin-top: 3rem;
     display: flex;
@@ -125,17 +127,20 @@ nav ul {
     height: auto;
 }
 
+/* Grid for Cards */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
+/* Card Styles */
 .card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #2d3c2d; /* Dark text color */
 }
 
 .icon {
@@ -150,6 +155,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 
+/* Flex Container */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -165,6 +171,13 @@ nav ul {
     text-align: center;
     padding: 1rem;
     margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d3c2d; /* Darker green */
+    color: white;
+    padding: 2rem 0;
 }
 
 .footer-links a {
