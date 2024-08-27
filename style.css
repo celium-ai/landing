@@ -48,31 +48,41 @@ nav ul {
 
 nav a {
     text-decoration: none; /* Removes the underline from links */
-    color: inherit; /* Inherits the text color */
+    color: #4d734f; /* Text color */
+    padding: 10px 15px; /* Padding around links to make them more clickable */
     transition: color 0.3s; /* Smooth color change on hover */
 }
+
 nav a.active {
-    color: #588157; /* Or another highlight color */
+    color: #588157; /* Highlight color for active link */
     font-weight: bold;
 }
 
 nav a:hover {
     color: #588157; /* Hover color */
 }
+
 /* Resize the logo to icon size */
 .logo-icon {
     height: 40px; /* Set the height to 40px, adjust as needed */
     width: auto; /* Auto width to maintain aspect ratio */
-}
-
-/* Ensure the nav bar items are aligned */
-nav ul {
-    display: flex;
-    align-items: center; /* Align the list items and the logo vertically */
+    margin-right: 20px; /* Space between the logo and navigation items */
 }
 
 nav img {
     margin-right: 20px; /* Space between the logo and navigation items */
+}
+nav a:hover {
+    color: #588157; /* Hover color */
+}
+
+nav ul {
+    list-style: none; /* Removes the default list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between each nav item */
 }
 
 .text-center {
